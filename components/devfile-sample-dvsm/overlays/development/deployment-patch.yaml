@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dvsm
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0020-tenant/tkrw-pr714-0075-0020-app/devfile-sample-dvsm@sha256:19394b7802f4875d4e5113a5d214cb11bf7d4f36ea89e8639513a31f7bc6bf1a
+        name: my-nodejs
+        resources: {}
+status: {}
